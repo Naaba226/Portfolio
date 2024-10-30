@@ -1,0 +1,138 @@
+h1{
+    background: #ff6347;
+    width: 50%;
+    text-align: center;
+    outline: 5px solid rgb(63, 11, 11);
+    margin-left: 25%;
+    margin-top: 0%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("fond.jpg");
+    overflow-x: hidden;
+}
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2em;
+    position: relative;
+}
+table
+{
+    border-collapse:collapse;
+    table-layout: fixed;
+    width: 100%;
+    height: 25px;
+    
+}
+tr
+{
+    
+    background-color: #22104d;
+    
+    
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    background-size: 15px; 
+    
+}
+a:hover
+{
+    text-transform: uppercase;
+    color : rgb(0, 252, 97);
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+.boss1 {
+    opacity: 0;
+    animation: boss1 2s forwards;
+}
+@keyframes boss1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.boss2 {
+    transform: translateY(100px);
+    opacity: 0;
+    animation: boss2 2s forwards;
+}
+@keyframes boss2 {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+footer {
+    margin-left: 0%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+.wave{
+    background-image: url("iron.jpg");
+    background-position: 0 0;
+    animation: wave 2s forwards;
+}
+@keyframes wave {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 600px 0;
+    }
+}
+.naaba
+{
+    background: url("img1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: fond 10s infinite;
+}
+.naaba::before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+@keyframes fond 
+{
+    0%{
+        background-image: url(img1);
+    }
+    25%{
+        background-image: url(img2);
+    }
+    50%{
+        background-image: url(img3);
+    }
+    75%{
+        background-image: url(img4);
+    }
+    100%{
+        background-image: url(img5);
+    }
+}
