@@ -120,6 +120,7 @@ header {
 	transition: 0.6s;
 	width: fit-content;
 	max-width: 700px;
+	margin:auto;
 }
 
 	.bac-content .presentation{
