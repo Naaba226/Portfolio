@@ -16,36 +16,36 @@ function affiche(imgs) {
 
 const frontend_html = 78;
 const frontend_javascript = 55;
-const frondent_bootstrap = 87;
-const frontend_react = 46;
+const frondent_bootstrap = 67;
+const frontend_react = 43;
 
 const backend_java = 67;
-const backend_php = 7;
+const backend_php = 57;
 const backend_sql = 43;
 
 const cms_wordpress = 44;
-const cms_canvas = 92;
+const cms_canvas = 82;
 
 const progress_python = 21;
-const progress_c = 51;
+const progress_c = 47;
 
 const progress_autre_marketing = 61;
 const progress_autre_maintenannce = 76;
 const progress_autre_alibaba = 55;
 
-const progress_mobile_kotline = 64;
+const progress_mobile_kotline = 74;
 const progress_mobile_flutter = 5;
 const progress_mobile_swift = 0;
 
-const progress_uml = 36;
+const progress_uml = 46;
 const progress_projet = 27;
 
-const progress_reseaux_administration = 81;
+const progress_reseaux_administration = 71;
 const progress_reseaux_instalation = 76;
-const progress_reseaux_securite = 41;
+const progress_reseaux_securite = 51;
 
-const progress_adobe_xd = 10;
-const progress_photoshop = 75;
+const progress_adobe_xd = 70;
+const progress_photoshop = 45;
 const progress_illustrator = 41;
 
 //let list = [frontend_bar, frontend_html, frontend_javascript, frondent_bootstrap, frontend_react, backend_bar, backend_java, backend_php, backend_sql, cms_bar, cms_wordpress, cms_canvas, progress_script, progress_python, progress_c, progress_autre, progress_autre_marketing, progress_autre_maintenannce, progress_autre_alibaba, progress_mobile, progress_mobile_kotline, progress_mobile_flutter, progress_mobile_swift, progress_modelisation, progress_uml, progress_projet, progress_reseaux, progress_reseaux_administration, progress_reseaux_instalation, progress_reseaux_securite, progress_adobe_xd, progress_photoshop, progress_graphisme, progress_illustrator];
