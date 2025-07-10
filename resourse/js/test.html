@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation au Scroll - Slide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 200vh;
+      background-color: #f0f0f0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    /* ========== Effets au scroll (via transition) ========== */
+
+    .slide-from-left, .slide-from-right, .fade-in {
+      opacity: 0;
+      transform: translateX(0);
+      transition: transform 1.2s ease, opacity 1.2s ease;
+    }
+
+    .slide-from-left {
+      transform: translateX(-200px); /* arrive de gauche */
+    }
+
+    .slide-from-right {
+      transform: translateX(200px); /* arrive de droite */
+    }
+
+    .fade-in {
+      transition: opacity 1.5s ease;
+    }
+
+    .visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="slide-from-left">
+    👈 Je viens de la gauche
+  </section>
+
+  <section class="slide-from-right">
+    👉 Je viens de la droite
+  </section>
+
+  <section class="fade-in">
+    🌫️ Je fade in doucement
+  </section>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible'); // remet à zéro si tu veux relancer en scrollant
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.slide-from-left, .slide-from-right, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>

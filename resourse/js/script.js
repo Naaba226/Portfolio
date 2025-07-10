@@ -80,6 +80,22 @@ function chargeGrandBar(bar, ...elements){
 
 }
 
+function addEffect1(element, progressElement,valeur) {
+let hoverClass = "hover_vert";
+progressElement.style.width = valeur+"%";
+let span = element.querySelector("span:nth-of-type(2)");
+if (span) {
+  span.textContent = valeur+'%'; // Change le texte du pourcentage
+}
+if (valeur < 40) {
+  hoverClass = "hover_rouge";
+} else if (valeur >= 40 && valeur < 50) {
+  hoverClass = "hover_orange";
+}
+
+progressElement.classList.add(hoverClass);
+}
+
 function addEffect(element, progressElement,valeur) {
 let hoverClass = "hover_vert";
 progressElement.style.width = valeur+"%";
@@ -96,25 +112,26 @@ if (valeur < 40) {
 progressElement.classList.add(hoverClass);
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-addEffect(document.getElementById("adobe_xd"), document.getElementById("progress_adobe_xd"),progress_adobe_xd);
+function charge() {
+
+  addEffect1(document.getElementById("backend_php_block"), document.getElementById("progress_php_block"),backend_php);
+  addEffect1(document.getElementById("backend_java_block"), document.getElementById("progress_java_block"),backend_java);
+  addEffect1(document.getElementById("js_block"), document.getElementById("progress_js_block"),frontend_javascript);
+  addEffect1(document.getElementById("kotline_block"), document.getElementById("progress_kotline_block"),progress_mobile_kotline);
+  addEffect1(document.getElementById("flutter_block"), document.getElementById("progress_flutter_block"),progress_mobile_flutter);
+  addEffect1(document.getElementById("sql_block"), document.getElementById("progress_sql_block"),backend_sql);
+  addEffect1(document.getElementById("admi_system_block"), document.getElementById("progress_admi_system_block"),progress_reseaux_administration);
+  addEffect1(document.getElementById("instalation_block"), document.getElementById("progress_instalation_block"),progress_reseaux_instalation);
+  addEffect1(document.getElementById("securite_block"), document.getElementById("progress_securite_block"),progress_reseaux_securite);
+  addEffect1(document.getElementById("reseaux_block"), document.getElementById("progress_reseaux_block"),progress_reseaux_administration+5);
+  addEffect1(document.getElementById("uml_block"), document.getElementById("progress_uml"),progress_uml);
+  
+  
+  
+  
+  addEffect(document.getElementById("adobe_xd"), document.getElementById("progress_adobe_xd"),progress_adobe_xd);
 addEffect(document.getElementById("photoshop"), document.getElementById("progress_photoshop"),progress_photoshop);
-addEffect(document.getElementById("illustrator"), document.getElementById("progress_illustrator"),progress_illustrator);
-chargeGrandBar(document.getElementById("progress_graphisme"),progress_adobe_xd,progress_photoshop,progress_illustrator);
 
-addEffect(document.getElementById("admi_system"), document.getElementById("progress_reseaux_administration"),progress_reseaux_administration);
-addEffect(document.getElementById("securite_card"), document.getElementById("progress_reseaux_securite"),progress_reseaux_securite);
-addEffect(document.getElementById("instalation_card"), document.getElementById("progress_reseaux_instalation"),progress_reseaux_instalation);
-chargeGrandBar(document.getElementById("progress_reseaux"),progress_reseaux_administration,progress_reseaux_securite,progress_reseaux_instalation);
-
-addEffect(document.getElementById("uml_card"), document.getElementById("progress_uml"),progress_uml);
-addEffect(document.getElementById("projet_card"), document.getElementById("progress_projet"),progress_projet);
-chargeGrandBar(document.getElementById("progress_modelisation"),progress_uml,progress_projet);
-
-addEffect(document.getElementById("kotline_card"), document.getElementById("progress_mobile_kotline"),progress_mobile_kotline);
-addEffect(document.getElementById("flutter_card"), document.getElementById("progress_mobile_flutter"),progress_mobile_flutter);
-addEffect(document.getElementById("swift_card"), document.getElementById("progress_mobile_swift"),progress_mobile_swift);
-chargeGrandBar(document.getElementById("progress_mobile"),progress_mobile_kotline,progress_mobile_swift,progress_mobile_flutter);
 
 addEffect(document.getElementById("frontend_html_card"), document.getElementById("frontend_html"),frontend_html);
 addEffect(document.getElementById("frondent_bootstrap_card"), document.getElementById("frondent_bootstrap"),frondent_bootstrap);
@@ -122,10 +139,6 @@ addEffect(document.getElementById("frontend_javascript_card"), document.getEleme
 addEffect(document.getElementById("frontend_react_card"), document.getElementById("frontend_react"),frontend_react);
 chargeGrandBar(document.getElementById("frontend_bar"),frontend_html,frondent_bootstrap,frontend_javascript,frontend_react);
 
-addEffect(document.getElementById("backend_java_card"), document.getElementById("backend_java"),backend_java);
-addEffect(document.getElementById("backend_php_card"), document.getElementById("backend_php"),backend_php);
-addEffect(document.getElementById("backend_sql_card"), document.getElementById("backend_sql"),backend_sql);
-chargeGrandBar(document.getElementById("backend_bar"),backend_java,backend_php,backend_sql);
 
 addEffect(document.getElementById("cms_wordpress_card"), document.getElementById("cms_wordpress"),cms_wordpress);
 addEffect(document.getElementById("cms_canvas_card"), document.getElementById("cms_canvas"),cms_canvas);
@@ -135,11 +148,53 @@ addEffect(document.getElementById("progress_python_card"), document.getElementBy
 addEffect(document.getElementById("progress_c_card"), document.getElementById("progress_c"),progress_c);
 chargeGrandBar(document.getElementById("progress_script"),progress_python,progress_c);
 
-addEffect(document.getElementById("progress_autre_maintenannce_card"), document.getElementById("progress_autre_maintenannce"),progress_autre_maintenannce);
 addEffect(document.getElementById("progress_autre_marketing_card"), document.getElementById("progress_autre_marketing"),progress_autre_marketing);
 addEffect(document.getElementById("progress_autre_alibaba_card"), document.getElementById("progress_autre_alibaba"),progress_autre_alibaba);
 chargeGrandBar(document.getElementById("progress_autre"),progress_autre_maintenannce,progress_autre_marketing,progress_autre_alibaba);
 
+
+
+
+
+}
+document.addEventListener("DOMContentLoaded", charge);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    } else {
+      entry.target.classList.remove('visible');
+    }
+  });
+}, {
+  threshold: 0.2
 });
-// Appliquer l'effet de survol à .competences_card avec la classe hover-effect
-//addHoverEffect(".competences_card", "hover-effect");
+
+document.querySelectorAll('.slide-left,.reveal, .slide-right, .slide-in').forEach(el => {
+  observer.observe(el);
+});
+
+const observer1 = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const progress = entry.target;
+
+    if (entry.isIntersecting) {
+
+      charge();
+    } else {
+     
+      progress.style.width = '0'; // Repart à zéro si on sort du viewport
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+// Appliquer à tous les éléments .progress
+document.querySelectorAll('.progress').forEach(el => {
+  observer1.observe(el);
+});
+
+
+

@@ -3,15 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" type="text/css" href="resourse/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	</head>
 	<body>
 		<header>
 			<div class="menu">
-				<select name="select" id="select">
-					<option value="fr">Français</option>
-					<option value="en">Anglais</option>
-				</select>
 				<img src="resourse/images/pp.jpg" alt="Profil" />
 				<a href="#" class="presentation_a">Presentation</a>
 				<a href="#services" class="services_a">Mes services</a>
@@ -24,7 +23,7 @@
 					<div></div>
 					<div></div>
 				</span>
-				
+
 				<span>
 					<div></div>
 					<div></div>
@@ -32,127 +31,136 @@
 				</span>
 			</div>
 		</header>
+		<main>
+			<section class="bac">
+				<div class="bac-image slide-right">
+					<img src="resourse/images/pp.jpg" alt="profil" srcset="" />
+				</div>
 
-		<div class="bac">
-			<div class="bac-content">
-				<h2>OUEDRAOGO NAABA FAÏÇAL</h2>
-				<h1>
-					Full stack Developer & Étudiant en Génie Reseaux et systeme
-					Informatique
-				</h1>
-				<p>
-					Étudiant en Réseaux Informatiques et Télécommunications
-					(RIT), j’ai pour ambition d’exploiter mes compétences en
-					réseau, développement et maintenance afin de concevoir des
-					solutions adaptées aux besoins des utilisateurs et de
-					participer activement à l’évolution du secteur
-					technologique.
-				</p>
-				<p>
-					<select class="selectCV" name="select" id="select">
-						<option value="" disabled selected>-- Voir  mon cv --</option>
-						<option value="#">Reseau et systeme</option>
-						<option value="#">Fullstack</option>
-						<option value="#">Back-ent</option>
-						<option value="#">Front-ent</option>
-					</select>
-				</p>
-				
-				
-			</div>
-		</div>
-			<section id="formation">
-				
-				<h1>FORMATIONS</h1>
-				 	<div class="formation_card"> 
-					 
-						<div class="formation_card1">
-							 
-							 <h2>Master Pro</h2>
-							 <h4>Telecommunication</h4>
-							 <p>institut superieur de technologie (IST)</p>
-						</div>
-					
-					 
-						<div class="formation_card1">
-							 
-							 <h2>Licence Pro </h2>
-							 <h4>reseaux et systemes informatique</h4>
-							 <p>institut superieur de technologie (IST)</p>
-						</div>
-					
-					
-						<div class="formation_card1">
-							
-							 <h2>BTS D'ETAT</h2> 
-								<h4>reseaux informatiques et telecommunications</h4>
-							 <p>institut superieur de technologie (IST)</p>
-						</div>
-					
-					 
-						<div class="formation_card1">
-
-							 <h2>BAC C</h2> 
-								<h4>Mathematique et science Physique</h4>
-							 <p>Lycée Pholytechnique de Ouahigouya</p>
-						</div>
-					
-					</div>
-				 
-			</section>	   
+				<div class="bac-content slide-left">
+					<h1>OUEDRAOGO NAABA FAÏÇAL</h1>
+					<p>
+						Back-end Developpeur <br />
+						Technicien Reseaux et systeme Informatique
+					</p>
+					<p class="presentation">
+						Étudiant en fin de cycle Réseaux Système Informatiques ,
+						j’ai pour ambition d’exploiter mes compétences en
+						réseau, développement et maintenance afin de concevoir
+						des solutions adaptées aux besoins des utilisateurs et
+						de participer activement à l’évolution du secteur
+						technologique.
+					</p>
+					<p>
+						<a
+							href="https://www.facebook.com/naabafaical"
+							target="_blank"
+							rel="noopener noreferrer">
+							<i class="fab fa-facebook"></i>
+						</a>
+						<a
+							href="https://www.instagram.com/naabafaical/"
+							target="_blank
+"
+							rel="noopener noreferrer">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/naaba-faical-ouedraogo
+/"
+							target="_blank"
+							rel="noopener noreferrer">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a
+							href="https://github.com/Naaba226"
+							target="_blank"
+							rel="noopener noreferrer">
+							<i class="fab fa-github"></i>
+						</a>
+						<a
+							href="mailto:naabafaical@gmail.com"
+							target="_blank"
+							rel="noopener noreferrer">
+							<i class="fas fa-envelope"></i>
+						</a>
+						<a
+							href="https://wa.me/22670162626"
+							target="_blank"
+							rel="noopener noreferrer">
+							<i class="fab fa-whatsapp"></i>
+						</a>
+					</p>
+					<p>
+						<a href="#">
+							<button type="button" class="selectCV">
+								Telecharge CV
+							</button>
+						</a>
+					</p>
+				</div>
+			</section>
 
 			<section class="services" id="services">
-				<h2>SERVICES
-				</h2>
+				<h2>SERVICES</h2>
 				<div class="services-grid" id="services-grid">
 					<div class="service-card service-card1">
 						<p class="icon"><i class="fas fa-code"></i></p>
 						<h3>Full stack developer</h3>
 						<p>creation de tout logiciel</p>
 					</div>
-					<div class="service-card service-card2">
+					<div class="service-card service-card2 slide-left">
 						<p class="icon"><i class="fas fa-server"></i></p>
 						<h3>Back-end developer</h3>
 						<p>Création API et de Base de donnée</p>
 					</div>
-					<div class="service-card service-card1">
+					<!-- <div class="service-card service-card1">
 						<p class="icon"><i class="fab fa-js-square"></i></p>
 						<h3>developer Front-end</h3>
 						<p>Création d'interfaces modernes et réactifs</p>
-					</div>
-					<div class="service-card service-card2">
+					</div> -->
+					<div class="service-card service-card2 slide-right">
 						<p class="icon"><i class="fas fa-mobile"></i></p>
 						<h3>developement mobile</h3>
 						<p>maintenance et conception application mobile</p>
 					</div>
-					<div class="service-card service-card2">
+					<div class="service-card service-card2 slide-left">
 						<p class="icon"><i class="fas fa-tools"></i></p>
 						<h3>Maintenance Informatique</h3>
-						<p>Vente de materiels Informatique et Ordinateur</p>
+						<p>
+							Installation Logicielle, entretien et reparation
+							Ordinateur
+						</p>
 					</div>
-					<div class="service-card service-card1">
+					<!-- <div class="service-card service-card1">
 						<p class="icon"><i class="fas fa-palette"></i></p>
 						<h3>Infographie</h3>
 						<p>graphisme et création visuelle</p>
-					</div>
-					<div class="service-card service-card2">
+					</div> -->
+					<!-- <div class="service-card service-card2">
 						<p class="icon"><i class="fas fa-terminal"></i></p>
 						<h3>Installation Logicielle</h3>
 						<p>Windows,Mac-Os et Pack Office</p>
-					</div>
-					<div class="service-card service-card1">
+					</div> -->
+					<div class="service-card service-card1 slide-in">
 						<p class="icon"><i class="fas fa-network-wired"></i></p>
-						<h3>Installation Reseaux</h3>
-						<p>
-							installation,maintenance et configuuration reseaux
-						</p>
+						<h3>Technicien Reseaux</h3>
+						<p>installation,maintenance et configuration reseaux</p>
 					</div>
-					<div class="service-card service-card2">
+
+					<div class="service-card service-card2 slide-left">
 						<p class="icon"><i class="fas fa-tools"></i></p>
-						<h3>Administration Reseaux/données</h3>
-						<p>administration reseaux et Bases de données</p>
+						<h3>Administrateur Reseaux</h3>
+						<p>administration reseaux</p>
 					</div>
-					<div class="service-card service-card1">
+
+					<div class="service-card service-card2 slide-right">
+						<p class="icon"><i class="fas fa-tools"></i></p>
+						<h3>Administrateur de base de données</h3>
+						<p>administration Bases de données</p>
+					</div>
+
+					<div class="service-card service-card1 slide-in">
 						<p class="icon"><i class="fas fa-shield-alt"></i></p>
 						<h3>Cybersécurité & Systèmes</h3>
 						<p>
@@ -163,196 +171,310 @@
 				</div>
 			</section>
 
-				<section class="projets" id="projets">
-					<h2>Mes Projets</h2>
-					<div class="projets-grid" id="projets-grid">
-						<div class="projets-card">
-							<img
-								class="projets-img"
-								alt="dev"
-								src="resourse/images/photo.jpg" />
-							<h3>Frontend</h3>
-							<p>je suis bon</p>
-						</div>
-						<div class="projets-card">
-							<img
-								class="projets-img"
-								alt="dev"
-								src="resourse/images/photo.jpg" />
-							<h3>dev</h3>
-							<p>je suis bon</p>
-						</div>
-						<div class="projets-card">
-							<img
-								class="projets-img"
-								alt="dev"
-								src="resourse/images/photo.jpg" />
-							<h3>dev</h3>
-							<p>je suis bon</p>
-						</div>
-						<div class="projets-card">
-							<img
-								class="projets-img"
-								alt="Illustration futuriste représentant l'intelligence artificielle et le machine learning"
-								src="resourse/images/photo.jpg" />
-							<h3>dev</h3>
-							<p>je suis bon</p>
-						</div>
+			<section class="projets" id="projets">
+				<h2>Travaux Profesionnels</h2>
+				<div class="projets-grid" id="projets-grid">
+					<div class="projets-card slide-left">
+						<video
+							class="projets-img"
+							alt="dev"
+							src="resourse/images/projet/win_calculatrice.mp4"
+							autoplay
+							muted
+							loop
+							playsinline></video>
+						<h3>calculatrice Desktop</h3>
+						<p>codé en Java interface JavaFx</p>
+						<a href="#">Telechargé</a>
 					</div>
-				</section>
-			
-			<center><h1>Mes Compétences</h1></center>
-			<section class="competences" id="competences">
-				<div class="competences_grid graphisme">
-					<h2>
-						graphisme
-						<div class="progress-bar progress-bar-h2">
-							<div class="progress" id="progress_graphisme"></div>
-						</div>
-					</h2>
-					<div class="competences_card" id="adobe_xd">
-						<h3>
-							<i class="fas fa-chart-line"></i> Adobe XD / Figma
-							<span>0%</span>
-						</h3>
-						<div class="progress-bar">
-							<div class="progress" id="progress_adobe_xd"></div>
-						</div>
+
+					<div class="projets-card slide-right">
+						<video
+							class="projets-img"
+							alt="dev"
+							src="resourse/images/projet/wave.mp4"
+							autoplay
+							muted
+							loop
+							playsinline></video>
+						<h3>Interface wave</h3>
+						<p>App mobile Kotline</p>
 					</div>
-					<div
-						class="competences_card" id="photoshop">
-						<h3>
-							<i class="fas fa-paint-brush"></i> Photoshop
-							<span>90%</span>
-						</h3>
-						<div class="progress-bar">
-							<div class="progress" id="progress_photoshop"></div>
-						</div>
+
+					<div class="projets-card slide-left">
+						<video
+							class="projets-img"
+							alt="dev"
+							src="resourse/images/projet/cisco.mp4"
+							autoplay
+							muted
+							loop
+							playsinline></video>
+						<h3>Conception reseau</h3>
+						<p>simulation reseau avec cisco packet tracer</p>
 					</div>
-					<div
-						class="competences_card" id="illustrator">
-						<h3>
-							<i class="fas fa-code"></i> Illustrator
-							<span>10%</span>
-						</h3>
-						<div class="progress-bar">
-							<div
-								class="progress"
-								id="progress_illustrator"></div>
-						</div>
+
+					<div class="projets-card slide-right">
+						<img
+							class="projets-img"
+							alt="Illustration futuriste représentant l'intelligence artificielle et le machine learning"
+							src="resourse/images/pp.jpg" />
+						<h3>dev</h3>
+						<p>je suis bon</p>
 					</div>
 				</div>
-				
-				<div
-					class="competences_grid reseaux">
-					<h2>
-						RESEAUX
-						<div class="progress-bar progress-bar-h2">
-							<div class="progress" id="progress_reseaux"></div>
-						</div>
-					</h2>
+			</section>
 
-					<div class="competences_card" id="admi_system">
-						<h3>
-							<i class="fas fa-chart-line"></i> Administration des
-							systemes et reseaux <span>60%</span>
-						</h3>
-						<div class="progress-bar">
+			<section class="niveau">
+				<center><h2>Mes Compétences</h2></center>
+
+				<section class="skills competences1" id="skills">
+					<div class="content">
+						<div class="column col-left">
+							<h3
+								class="content-title"
+								data-aos="fade-right"
+								data-aos-duration="1000"
+								data-aos-delay="200">
+								Développement Backend && mobile
+							</h3>
 							<div
-								class="progress"
-								id="progress_reseaux_administration">
+								class="paragraph-text"
+								data-aos="flip-down"
+								data-aos-duration="1000"
+								data-aos-delay="300">
+								Passionné par l’architecture backend, je conçois
+								des systèmes fiables, sécurisés e t évolutifs.
+								Curieux et motivé, j’apprends en continu pour
+								maîtriser les meilleures pratiques et offrir des
+								solutions performantes côté serveur.
+							</div>
+							<!-- <a
+								href="#"
+								class="btn"
+								data-aos="zoom-in-right"
+								data-aos-duration="1000"
+								data-aos-delay="400"
+								>See more</a
+							> -->
+						</div>
+						<div class="column col-right">
+							<div class="bar" id="backend_php_block">
+								<div
+									class="info"
+									data-aos="flip-up"
+									data-aos-duration="1000"
+									data-aos-delay="100">
+									<span>php/Laravel</span>
+									<span>95%</span>
+								</div>
+								<div class="progress-bar">
+									<div
+										class="progress"
+										id="progress_php_block"></div>
+								</div>
+							</div>
+
+							<div class="bar" id="backend_java_block">
+								<div
+									class="info"
+									data-aos="flip-up"
+									data-aos-duration="1000"
+									data-aos-delay="200">
+									<span>Java/Spring</span>
+									<span>90%</span>
+								</div>
+								<div class="progress-bar">
+									<div
+										class="progress"
+										id="progress_java_block"></div>
+								</div>
+							</div>
+
+							<div class="bar" id="js_block">
+								<div
+									class="info"
+									data-aos="flip-up"
+									data-aos-duration="1000"
+									data-aos-delay="300">
+									<span>Javascript</span>
+									<span>80%</span>
+								</div>
+
+								<div class="progress-bar">
+									<div
+										class="progress"
+										id="progress_js_block"></div>
+								</div>
+							</div>
+
+							<div class="bar" id="kotline_block">
+								<div
+									class="info"
+									data-aos="flip-up"
+									data-aos-duration="1000"
+									data-aos-delay="400">
+									<span>kotline</span>
+									<span>85%</span>
+								</div>
+								<div class="progress-bar">
+									<div
+										class="progress"
+										id="progress_kotline_block"></div>
+								</div>
+							</div>
+
+							<div class="bar" id="flutter_block">
+								<div
+									class="info"
+									data-aos="flip-up"
+									data-aos-duration="1000"
+									data-aos-delay="300">
+									<span>Dart/Flutter</span>
+									<span>80%</span>
+								</div>
+								<div class="progress-bar">
+									<div
+										class="progress"
+										id="progress_flutter_block"></div>
+								</div>
+							</div>
+							<div class="bar" id="sql_block">
+								<div
+									class="info"
+									data-aos="flip-up"
+									data-aos-duration="1000"
+									data-aos-delay="500">
+									<span>SQL</span>
+									<span>65%</span>
+								</div>
+								<div class="progress-bar">
+									<div
+										class="progress"
+										id="progress_sql_block"></div>
+								</div>
+							</div>
+
+							<div class="bar" id="uml_block">
+								<div
+									class="info"
+									data-aos="flip-up"
+									data-aos-duration="1000"
+									data-aos-delay="500">
+									<span>UML</span>
+									<span>65%</span>
+								</div>
+
+								<div class="progress-bar">
+									<div
+										class="progress"
+										id="progress_uml"></div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="competences_card" id="securite_card">
-						<h3>
-							<i class="fas fa-paint-brush"></i> Sécurité
-							informatique
-							<span>90%</span>
-						</h3>
-						<div class="progress-bar">
-							<div
-								class="progress"
-								id="progress_reseaux_securite"></div>
-						</div>
-					</div>
-					<div class="competences_card" id="instalation_card">
-						<h3>
-							<i class="fas fa-code"></i> instalation &&
-							configuration && maintenace reseaux <span>10%</span>
-						</h3>
-						<div class="progress-bar">
-							<div
-								class="progress"
-								id="progress_reseaux_instalation"></div>
-						</div>
-					</div>
-				</div>
+				</section>
 
-				<div class="competences_grid modelisation">
-					<h2>
-						Modelisation & gestion projet
-						<div class="progress-bar progress-bar-h2">
+				<section class="skills competences2" id="skills">
+					<div class="content">
+						<div class="column col-left">
+							<h3
+								class="content-title"
+								data-aos="fade-right"
+								data-aos-duration="1000"
+								data-aos-delay="200">
+								Réseaux & Systèmes Informatique
+							</h3>
 							<div
-								class="progress"
-								id="progress_modelisation"></div>
+								class="paragraph-text"
+								data-aos="flip-down"
+								data-aos-duration="1000"
+								data-aos-delay="300">
+								Passionné par l’ingénierie réseau, je conçois,
+								configure et sécurise des infrastructures
+								efficaces. Je me forme en continu pour maîtriser
+								les outils et technologies nécessaires à des
+								systèmes performants et résilients.
+							</div>
+							<!-- <a
+								href="#"
+								class="btn"
+								data-aos="zoom-in-right"
+								data-aos-duration="1000"
+								data-aos-delay="400"
+								>See more</a
+							> -->
 						</div>
-					</h2>
-					<div class="competences_card" id="uml_card">
-						<h3>
-							<i class="fas fa-chart-line"></i> UML
-							<span>60%</span>
-						</h3>
-						<div class="progress-bar">
-							<div class="progress" id="progress_uml"></div>
+						<div class="column col-right">
+							<div class="bar" id="admi_system_block">
+								<div
+									class="info"
+									data-aos="flip-up"
+									data-aos-duration="1000"
+									data-aos-delay="100">
+									<span>Systemes et reseaux</span>
+									<span>95%</span>
+								</div>
+								<div class="progress-bar">
+									<div
+										class="progress"
+										id="progress_admi_system_block"></div>
+								</div>
+							</div>
+							<div class="bar" id="instalation_block">
+								<div
+									class="info"
+									data-aos="flip-up"
+									data-aos-duration="1000"
+									data-aos-delay="200">
+									<span>
+										configuration && maintenace
+										reseaux</span
+									>
+									<span>90%</span>
+								</div>
+								<div class="progress-bar">
+									<div
+										class="progress"
+										id="progress_instalation_block"></div>
+								</div>
+							</div>
+							<div class="bar" id="securite_block">
+								<div
+									class="info"
+									data-aos="flip-up"
+									data-aos-duration="1000"
+									data-aos-delay="300">
+									<span>Sécurité informatique</span>
+									<span>80%</span>
+								</div>
+								<div class="progress-bar">
+									<div
+										class="progress"
+										id="progress_securite_block"></div>
+								</div>
+							</div>
+							<div class="bar" id="reseaux_block">
+								<div
+									class="info"
+									data-aos="flip-up"
+									data-aos-duration="1000"
+									data-aos-delay="400">
+									<span>Administration des reseaux</span>
+									<span>85%</span>
+								</div>
+								<div class="progress-bar">
+									<div
+										class="progress"
+										id="progress_reseaux_block"></div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="competences_card" id="projet_card">
-						<h3>
-							<i class="fas fa-paint-brush"></i> MS Projet
-							<span>90%</span>
-						</h3>
-						<div class="progress-bar">
-							<div class="progress" id="progress_projet"></div>
-						</div>
-					</div>
-				</div>
+				</section>
+			</section>
 
-				<div class="competences_grid mobile">
-					<h2>
-						Mobile 
-						<div class="progress-bar progress-bar-h2">
-							<div class="progress" id="progress_mobile"></div>
-						</div>
-					</h2>
-
-					<div class="competences_card" id="kotline_card">
-						<h3>Java && Kotline <span>75%</span></h3>
-						<div class="progress-bar">
-							<div
-								class="progress"
-								id="progress_mobile_kotline"></div>
-						</div>
-					</div>
-
-					<div class="competences_card" id="flutter_card">
-						<h3>Flutter <span>45%</span></h3>
-						<div class="progress-bar">
-							<div
-								class="progress"
-								id="progress_mobile_flutter"></div>
-						</div>
-					</div>
-
-					<div class="competences_card" id="swift_card">
-						<h3>Swift <span>40%</span></h3>
-						<div class="progress-bar">
-							<div
-								class="progress"
-								id="progress_mobile_swift"></div>
-						</div>
-					</div>
-				</div>
+			<section class="competences" id="competences">
 
 				<div class="competences_grid frontend" id="frontend">
 					<h2>
@@ -388,35 +510,6 @@
 						<h3>React <span>75%</span></h3>
 						<div class="progress-bar">
 							<div class="progress" id="frontend_react"></div>
-						</div>
-					</div>
-				</div>
-
-				<div class="competences_grid backend">
-					<h2>
-						Back-end dev
-						<div class="progress-bar progress-bar-h2">
-							<div class="progress" id="backend_bar"></div>
-						</div>
-					</h2>
-					<div class="competences_card" id="backend_java_card">
-						<h3>Java / Spring / JEE <span>60%</span></h3>
-						<div class="progress-bar">
-							<div class="progress" id="backend_java"></div>
-						</div>
-					</div>
-
-					<div class="competences_card" id="backend_php_card">
-						<h3>PHP <span>40%</span></h3>
-						<div class="progress-bar">
-							<div class="progress" id="backend_php"></div>
-						</div>
-					</div>
-
-					<div class="competences_card" id="backend_sql_card">
-						<h3>SQL <span>40%</span></h3>
-						<div class="progress-bar">
-							<div class="progress" id="backend_sql"></div>
 						</div>
 					</div>
 				</div>
@@ -480,18 +573,27 @@
 							<div class="progress" id="progress_autre"></div>
 						</div>
 					</h2>
-					<div class="competences_card" id="progress_autre_maintenannce_card">
+					<div class="competences_card" id="adobe_xd">
 						<h3>
-							<i class="fas fa-chart-line"></i> Maintenance(PC,Telephone)
-							<span>60%</span>
+							<i class="fas fa-chart-line"></i> Adobe XD / Figma
+							<span>0%</span>
 						</h3>
 						<div class="progress-bar">
-							<div
-								class="progress"
-								id="progress_autre_maintenannce"></div>
+							<div class="progress" id="progress_adobe_xd"></div>
 						</div>
 					</div>
-					<div class="competences_card" id="progress_autre_marketing_card">
+					<div class="competences_card" id="photoshop">
+						<h3>
+							<i class="fas fa-paint-brush"></i> Photoshop
+							<span>90%</span>
+						</h3>
+						<div class="progress-bar">
+							<div class="progress" id="progress_photoshop"></div>
+						</div>
+					</div>
+					<div
+						class="competences_card"
+						id="progress_autre_marketing_card">
 						<h3>
 							<i class="fas fa-paint-brush"></i> marketing digital
 							<span>90%</span>
@@ -502,7 +604,9 @@
 								id="progress_autre_marketing"></div>
 						</div>
 					</div>
-					<div class="competences_card" id="progress_autre_alibaba_card">
+					<div
+						class="competences_card"
+						id="progress_autre_alibaba_card">
 						<h3>
 							<i class="fas fa-code"></i> achat aliBABA &&
 							AliExxpress
@@ -517,57 +621,114 @@
 				</div>
 			</section>
 
-			<footer id="contact">
-				<h1>Contactez-moi</h1>
-				<p>📞 <a href="tel:+22676593334">+226 765 933 34</a></p>
-				<p>
-					📧
-					<a href="mailto:naabafaical@gmail.com"
-						>naabafaical@gmail.com</a
-					>
-				</p>
-				<p>
-					📍
-					<a
-						href="https://sites.google.com/view/sababoutechnaam/accueil"
-						target="_blank"
-						>www.TechNaam.com</a
-					>
-				</p>
+			<section class="contact" id="contact">
+				<div class="title reveal">
+					<h2 class="section-title">Contactez moi</h2>
+				</div>
+				<div class="content">
+					<div class="row">
+						<div class="card reveal">
+							<div class="info">
+								<h3>
+									<i class="fas fa-map-marker-alt"></i>Address
+								</h3>
+								<span>Burkina , Ouagadougou</span>
+							</div>
+						</div>
 
-				<form class="formContact" action="contact.php" method="post">
-					<h2>Envoyez un message</h2>
-					<input
-						type="email"
-						name="email"
-						placeholder="Votre Email"
-						required />
-					<textarea
-						name="message"
-						placeholder="Votre message"
-						rows="5"
-						required></textarea>
-					<button type="submit">Envoyer</button>
-				</form>
+						<a href="tel:+22676593334" class="card reveal">
+							<div class="contact-icon"></div>
+							<div class="info">
+								<h3><i class="fas fa-phone"></i> Telephone</h3>
+								<span>+226 79993598</span>
+							</div>
+						</a>
 
-				<section class="contact">
-					<a
-						href="https://wa.me/22679993598"
-						class="contactBac whatsapp"
-						><i class="fab fa-whatsapp"></i> WhatsApp</a
-					>
-					<a href="tel:+22676593334" class="contactBac phone"
-						><i class="fas fa-phone"></i> Téléphone</a
-					>
-					<a
-						href="mailto:naabafaical@gmail.com"
-						class="contactBac email"
-						><i class="fas fa-envelope"></i> Email</a
-					>
-				</section>
-				<p>© 2025 Naaba Faïçal OUEDRAOGO</p>
-			</footer>
+						<a href="https://wa.me/22679993598" class="card reveal">
+							<div class="info">
+								<h3><i class="fab fa-whatsapp"></i>WhatsApp</h3>
+								<span>+226 79993598</span>
+							</div>
+						</a>
 
+						<a
+							href="mailto:naabafaical@gmail.com"
+							class="card reveal fade-in">
+							<div class="info">
+								<h3><i class="fas fa-envelope"></i>Email</h3>
+								<span>naabafaical@email.com</span>
+							</div>
+						</a>
+
+						<div class="row">
+							<div class="contact-form reveal">
+								<h3>Message</h3>
+								<div class="input-box">
+									<input
+										type="text"
+										name=""
+										value=""
+										placeholder="Name" />
+								</div>
+								<div class="input-box">
+									<input
+										type="text"
+										name=""
+										value=""
+										placeholder="Email" />
+								</div>
+								<div class="input-box">
+									<textarea
+										name="name"
+										rows="8"
+										cols="80"
+										placeholder="Message"></textarea>
+								</div>
+								<div class="input-box">
+									<input
+										type="submit"
+										class="send-btn"
+										name=""
+										value="Send" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="footer-content">
+				<p>Suivez-moi sur les réseaux sociaux :</p>
+				<a
+					href="https://www.facebook.com/naabafaical"
+					target="_blank"
+					rel="noopener noreferrer">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a
+					href="https://www.instagram.com/naabafaical/"
+					target="_blank
+"
+					rel="noopener noreferrer">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/naaba-faical-ouedraogo
+/"
+					target="_blank"
+					rel="noopener noreferrer">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a
+					href="https://github.com/Naaba226"
+					target="_blank"
+					rel="noopener noreferrer">
+					<i class="fab fa-github"></i>
+				</a>
+			</div>
+			<p>© 2025 Naaba Faïçal OUEDRAOGO</p>
+		</footer>
 		<script src="resourse/js/script.js"></script>
 	</body>
 </html>
